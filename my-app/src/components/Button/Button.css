@@ -1,0 +1,45 @@
+.primaryButton {
+  position: relative;
+}
+#button-svg {
+  /* */
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin: 4px;
+  z-index: 1;
+}
+#button-svg path {
+  stroke-dasharray: 300;
+  stroke-dashoffset: 0;
+}
+
+.primaryButton {
+  /* removing default stlying for buttons */
+  width: 250px;
+  height: 110px;
+  border-radius: 25px;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+/* changing the default focus and hovers for when the button is clicked on */
+.primaryButton:focus {
+  outline: 2.5px dashed #8888b9;
+  border-radius: 25px;
+}
+.primaryButton:hover svg {
+  transform: scale(1.01);
+}
+
+.primaryButton::-moz-focus-inner {
+  border: 0;
+}
+.primaryButton::-moz-focus-inner svg {
+  outline: none;
+  transition: transform 0.3s linear;
+}
+
+/* span styling */
+.button-span {
+}

@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+#formfield1-svg {
+  /* */
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  margin-top: 25px;
+}
+.FormField1-div {
+  position: relative;
+  width: 250px;
+  height: 110px;
+}
+
+.FormField1-input {
+  height: 20px;
+  font-size: 20px;
+  text-align: center;
+  border: 0;
+  background: linear-gradient(rgb(188, 153, 216, 0), rgb(188, 153, 216, 0));
+  width: 90%;
+  padding: 8px 0 5px 0;
+  font-size: 30px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 200;
+}
+
+.FormField1-input:focus {
+  border: none;
+  outline: none;
+  background: linear-gradient(rgb(188, 153, 216, 0.2), rgb(188, 153, 216, 0));
+}

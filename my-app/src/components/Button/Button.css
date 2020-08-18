@@ -1,6 +1,6 @@
-.primaryButton {
-  position: relative;
-}
+/* common button styling  */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 #button-svg {
   /* */
   position: absolute;
@@ -9,6 +9,7 @@
   margin: 4px;
   z-index: 1;
 }
+/* for anime.js */
 #button-svg path {
   stroke-dasharray: 300;
   stroke-dashoffset: 0;
@@ -16,9 +17,10 @@
 
 .primaryButton {
   /* removing default stlying for buttons */
+  position: relative;
   width: 250px;
   height: 110px;
-  border-radius: 25px;
+  /* border-radius: 25px; */
   border: none;
   background: none;
   cursor: pointer;
@@ -42,4 +44,7 @@
 
 /* span styling */
 .button-span {
+  font-size: 30px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 200;
 }

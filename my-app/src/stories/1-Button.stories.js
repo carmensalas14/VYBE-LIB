@@ -8,13 +8,21 @@ export default {
 };
 
 export const Text = () => (
-  <Button onClick={action('clicked')}>Hello Button</Button>
+  <div>
+    <Button onClick={action('clicked')}>Hello Button</Button>
+    <Button color="#6d6" onClick={action('clicked')}>
+      Green Button
+    </Button>
+    <Button color="#6d6" size="md" onClick={action('clicked')}>
+      Medium Button
+    </Button>
+  </div>
 );
 
 export const Emoji = () => (
   <Button onClick={action('clicked')}>
     <span role="img" aria-label="so cool">
-      cool 😎 👍
+      😎 👍
     </span>
   </Button>
 );

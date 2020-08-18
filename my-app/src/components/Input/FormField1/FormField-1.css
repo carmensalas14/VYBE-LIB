@@ -16,15 +16,14 @@
 
 .FormField1-input {
   height: 20px;
-  font-size: 20px;
+  font-size: 23px;
   text-align: center;
   border: 0;
   background: linear-gradient(rgb(188, 153, 216, 0), rgb(188, 153, 216, 0));
   width: 90%;
   padding: 8px 0 5px 0;
-  font-size: 30px;
   font-family: 'Inter', sans-serif;
-  font-weight: 200;
+  font-weight: 400;
 }
 
 .FormField1-input:focus {

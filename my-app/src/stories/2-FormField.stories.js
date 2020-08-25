@@ -1,7 +1,7 @@
 import React from 'react';
-import FormField1 from '../components/Input/FormField1';
-import FormField2 from '../components/Input/FormField2';
-import FormField3 from '../components/Input/FormField3';
+import FormField1 from '../components/FormField/FormField1/FormField-1';
+import FormField2 from '../components/FormField/FormField2/FormField-2';
+import FormField3 from '../components/FormField/FormField3/FormField-3';
 
 export default {
   title: 'FormField',

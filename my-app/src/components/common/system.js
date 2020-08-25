@@ -19,6 +19,10 @@ export const scaledSizes = {
   lg: 'scale(0.9)',
 };
 
+export const hoverScaleSizes = {
+  md: 'scale(.67)',
+  lg: 'scale(1.0)',
+};
 // sizes for fonts
 export const fontSizes = {
   sm: '16px',

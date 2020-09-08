@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { render, cleanup } from '@testing-library/react';
-import FormField2 from './FormField-2';
+import FormField2 from '../FormField-2';
 // for snapshot testing
 import renderer from 'react-test-renderer';
 

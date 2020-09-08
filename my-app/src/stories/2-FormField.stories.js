@@ -9,25 +9,34 @@ export default {
 };
 
 export const Loop = () => (
-  <div>
-    <FormField1 color="#54c"></FormField1>
-    <FormField1 color="#50f161"></FormField1>
+  <section>
+    <p>Password Input</p>
+    <FormField1 type="password" color="#54c"></FormField1>
+    <p>Date Input</p>
+    <FormField1 type="date" color="#50f161"></FormField1>
+    <p>Text Input</p>
     <FormField1 color="#cad"></FormField1>
-  </div>
+  </section>
 );
 
 export const Wave = () => (
-  <div>
-    <FormField2 color="#bcb"> </FormField2>
-    <FormField2 color="#e8e"> </FormField2>
-    <FormField2 color="#f85"> </FormField2>
-  </div>
+  <section>
+    <p>Password Input</p>
+    <FormField2 type="password" color="#bcb"></FormField2>
+    <p>Date Input</p>
+    <FormField2 type="date" color="#e8e"></FormField2>
+    <p>Text Input</p>
+    <FormField2 color="#f85"></FormField2>
+  </section>
 );
 
 export const Loose = () => (
-  <div>
-    <FormField3 color="#b58"> </FormField3>
-    <FormField3 color="#fa3"> </FormField3>
-    <FormField3 color="#56c"> </FormField3>
-  </div>
+  <section>
+    <p>Password Input</p>
+    <FormField3 type="password" color="#b58"></FormField3>
+    <p>Date Input</p>
+    <FormField3 type="date" color="#fa3"></FormField3>
+    <p>Text Input</p>
+    <FormField3 color="#56c"></FormField3>
+  </section>
 );

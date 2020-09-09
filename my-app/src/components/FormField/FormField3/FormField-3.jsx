@@ -65,7 +65,7 @@ export const StyledDiv = styled.div`
 const FormField3 = React.forwardRef(function FormField3(props, ref) {
   const { color, type, ...otherProps } = props;
   return (
-    <StyledDiv color={color} className="FormField3-div">
+    <StyledDiv color={color}>
       <svg
         className="FormField3-svg"
         width="251"
@@ -82,11 +82,13 @@ const FormField3 = React.forwardRef(function FormField3(props, ref) {
           strokeLinejoin="round"
         />
       </svg>
+
       <input
+        {...otherProps}
         data-testid="formfield-3"
         className="FormField3-input"
         ref={ref}
-        {...otherProps}
+        type={type}
       ></input>
     </StyledDiv>
   );

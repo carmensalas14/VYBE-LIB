@@ -1,50 +1,6 @@
 /* common button styling  */
+@import url('https://fonts.googleapis.com/css2?family=Coming+Soon&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
-#button-svg {
-  /* */
-  position: absolute;
-  left: 0;
-  top: 0;
-  margin: 4px;
-  z-index: 1;
-}
-/* for anime.js */
-#button-svg path {
-  stroke-dasharray: 300;
-  stroke-dashoffset: 0;
-}
-
-.primaryButton {
-  /* removing default stlying for buttons */
-  position: relative;
-  width: 250px;
-  height: 110px;
-  /* border-radius: 25px; */
-  border: none;
-  background: none;
-  cursor: pointer;
-}
-/* changing the default focus and hovers for when the button is clicked on */
-.primaryButton:focus {
-  outline: 2.5px dashed #8888b9;
-  border-radius: 25px;
-}
-.primaryButton:hover svg {
-  transform: scale(1.01);
-}
-
-.primaryButton::-moz-focus-inner {
-  border: 0;
-}
-.primaryButton::-moz-focus-inner svg {
-  outline: none;
-  transition: transform 0.3s linear;
-}
-
-/* span styling */
-.button-span {
-  font-size: 30px;
-  font-family: 'Inter', sans-serif;
-  font-weight: 200;
+button {
+  font-family: 'Coming Soon', cursive;
 }

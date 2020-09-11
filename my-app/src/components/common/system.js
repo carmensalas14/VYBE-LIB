@@ -2,7 +2,7 @@
 export const blockSizeHeights = {
   sm: '45px',
   md: '130px',
-  lg: '110px',
+  lg: '120px',
 };
 
 // sizes for button widths
@@ -23,9 +23,10 @@ export const hoverScaleSizes = {
   md: 'scale(.67)',
   lg: 'scale(1.0)',
 };
+
 // sizes for fonts
 export const fontSizes = {
-  sm: '16px',
-  md: '17px',
-  lg: '27px',
+  sm: '17px',
+  md: '26px',
+  lg: '39px',
 };

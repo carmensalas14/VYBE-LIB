@@ -2,10 +2,10 @@
 
 exports[`matches snapshot 1`] = `
 <button
-  className="sc-AxjAm iZUlOs"
+  className="sc-AxjAm eqjpnn"
   color="#ff38c0"
   data-testid="primary-button"
-  size="lg"
+  fontSize="md"
   type="button"
 >
   <svg

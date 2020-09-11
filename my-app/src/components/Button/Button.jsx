@@ -1,5 +1,6 @@
 import React from 'react';
 import propTypes from 'prop-types';
+import './Button.css';
 
 import styled from 'styled-components';
 
@@ -13,23 +14,18 @@ import {
 } from '../common/system';
 
 export const StyledButton = styled.button`
-  /* common button styling  */
-
-  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
-
   /* removing default stlying for buttons */
   position: relative;
-  height: ${({ size }) => blockSizeHeights[size]};
-  width: ${({ fullWidth, square, size }) =>
-    fullWidth
-      ? '100%'
-      : square
-      ? blockSizeHeights[size]
-      : blockSizeWidths[size]};
+  height: ${blockSizeHeights['lg']};
+  width: ${blockSizeWidths['lg']};
   border-radius: 25px;
   border: none;
   background: none;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 
   /* changing the default focus and hovers for when the button is clicked on */
   :focus {
@@ -38,7 +34,7 @@ export const StyledButton = styled.button`
   }
   // scale animation when hoverin gover button
   :hover svg {
-    transform: ${({ size }) => hoverScaleSizes[size]};
+    transform: ${hoverScaleSizes['lg']};
   }
 
   ::-moz-focus-inner {
@@ -55,7 +51,8 @@ export const StyledButton = styled.button`
     left: 0;
     top: 0;
     margin: 4px;
-    transform: ${({ size }) => scaledSizes[size]};
+    padding-top: 1.6%;
+    transform: ${scaledSizes['lg']};
   }
   /* for anime.js */
   .button-svg path {
@@ -65,18 +62,25 @@ export const StyledButton = styled.button`
   }
 
   /* span styling */
-  .button-span {
-    font-size: ${({ size }) => fontSizes[size]};
-    font-family: 'Inter', sans-serif;
-    font-weight: 400;
-    color: #555;
+
+  @media (min-width: 340px) {
+    .button-span {
+      font-size: ${({ fontSize }) => fontSizes[fontSize]};
+      font-weight: 400;
+      color: #555;
+    }
   }
 `;
 
 const Button = React.forwardRef(function Button(props, ref) {
-  const { children, ...otherProps } = props;
+  const { children, fontSize, ...otherProps } = props;
   return (
-    <StyledButton data-testid="primary-button" ref={ref} {...otherProps}>
+    <StyledButton
+      data-testid="primary-button"
+      ref={ref}
+      fontSize={fontSize}
+      {...otherProps}
+    >
       <svg className="button-svg">
         <path
           strokeWidth="6"
@@ -95,20 +99,15 @@ const Button = React.forwardRef(function Button(props, ref) {
 Button.defaultProps = {
   color: '#ff38c0',
   type: 'button',
-  fullWidth: false,
-  size: 'lg',
-  square: false,
+  fontSize: 'md',
   primary: false,
-  variant: 'default',
 };
 
 // prop types
 Button.propTypes = {
   type: propTypes.string,
   color: propTypes.string,
-  square: propTypes.bool,
-  fullWidth: propTypes.bool,
-  size: propTypes.oneOf(['sm', 'md', 'lg']),
+  fontSize: propTypes.oneOf(['sm', 'md', 'lg']),
   children: propTypes.node,
 };
 

@@ -3,7 +3,7 @@
 This project is the implementation of a custum component library where the components look like hand drawn doodles.
 This project was created using [Storybook](https://storybook.js.org/) and [Create React App](https://github.com/facebook/create-react-app).
 
-![AutoForm](images/autoform.png =300x)
+![AutoForm](images/autoform.png | width=80)
 
 > AutoForm component created using Input and Button component
 > <br />

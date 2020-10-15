@@ -6,11 +6,8 @@ This project was created using [Storybook](https://storybook.js.org/) and [Creat
 ![AutoForm](images/autoform.png 'AutoForm using Input and Button components')
 <br />
 
-### Available Scripts
-
-In the project directory, you can run:
-
 ## Development
+In the project directory, you can run:
 
 ### `npm i`
 
@@ -28,9 +25,9 @@ The page will reload if you make edits.<br />
 ### `npm test`
 
 Launches the test runner in the interactive watch mode.<br />
-Press `a` to run all tests
-Press `f` to run only failed tests
-Press `u` to automatically updated failing snapshot tests
+- Press `a` to run all tests
+- Press `f` to run only failed tests
+- Press `u` to automatically updated failing snapshot tests
 
 ### `npm run build`
 

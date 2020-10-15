@@ -3,10 +3,13 @@
 This project is the implementation of a custum component library where the components look like hand drawn doodles.
 This project was created using [Storybook](https://storybook.js.org/) and [Create React App](https://github.com/facebook/create-react-app).
 
-![AutoForm](images/autoform.png 'AutoForm using Input and Button components')
-<br />
+![AutoForm](images/autoform.png)
+
+> AutoForm component created using Input and Button component
+> <br />
 
 ## Development
+
 In the project directory, you can run:
 
 ### `npm i`
@@ -20,11 +23,14 @@ Open [http://localhost:9009](http://localhost:9009) to view it in the browser.
 
 The page will reload if you make edits.<br />
 
-![AutoForm on storybook](images/autoform-storybook.png 'AutoForm in Storybook environment')
+![AutoForm on storybook](images/autoform-storybook.png)
+
+> AutoForm in Storybook environment
 
 ### `npm test`
 
 Launches the test runner in the interactive watch mode.<br />
+
 - Press `a` to run all tests
 - Press `f` to run only failed tests
 - Press `u` to automatically updated failing snapshot tests

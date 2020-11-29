@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import propTypes from 'prop-types';
+import propTypes, { string } from 'prop-types';
 import ReactRough, { Circle } from 'react-rough';
+import { fontSizes } from '../common/system';
 
 import styled from 'styled-components';
 
@@ -14,6 +15,7 @@ export const StyledRadio = styled.div`
   }
   label {
     margin-left: 25%;
+    font-size: ${({ fontSize }) => fontSizes[fontSize]};
   }
   .radio-span {
     position: absolute;
@@ -29,17 +31,22 @@ export const StyledRadio = styled.div`
 
 const Radio = React.forwardRef(function Radio(props, ref) {
   const [checked, setChecked] = useState(false);
-  const { label, ...otherProps } = props;
+  const { color, fontSize, label, children, ...otherProps } = props;
   return (
-    <StyledRadio data-testid="radio" ref={ref}>
+    <StyledRadio
+      data-testid="radio"
+      ref={ref}
+      fontSize={fontSize}
+      {...otherProps}
+    >
       <input type="radio" id={label} name={label} />
-      <label for={label}>{label}</label>
+      <label for={label}>{children}</label>
 
-      <span className="radio-span">
+      <span className="radio-span" onClick={() => setChecked(!checked)}>
         <ReactRough
           config={{
             options: {
-              fill: checked ? 'black' : 'none',
+              fill: checked ? color : 'none',
             },
           }}
           renderer="svg"
@@ -52,7 +59,18 @@ const Radio = React.forwardRef(function Radio(props, ref) {
 });
 
 // default props
+Radio.defaultProps = {
+  color: '#df1ea2',
+  type: 'radio',
+  fontSize: 'sm',
+};
 
 // prop types
+Radio.propTypes = {
+  color: propTypes.string,
+  type: propTypes.string,
+  fontSize: propTypes.oneOf(['sm', 'md', 'lg']),
+  children: propTypes.node,
+};
 
 export default Radio;

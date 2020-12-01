@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import propTypes, { string } from 'prop-types';
+import propTypes from 'prop-types';
 import ReactRough, { Circle } from 'react-rough';
-import { fontSizes } from '../common/system';
-
 import styled from 'styled-components';
+// importing font sizes from common  styling sysytem
+import { fontSizes } from '../common/system';
 
 export const StyledRadio = styled.div`
   display: flex;
@@ -60,7 +60,7 @@ const Radio = React.forwardRef(function Radio(props, ref) {
 
 // default props
 Radio.defaultProps = {
-  color: '#df1ea2',
+  color: 'black',
   type: 'radio',
   fontSize: 'sm',
 };

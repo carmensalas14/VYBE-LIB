@@ -1,6 +1,6 @@
 # VYBE Component Library
 
-This project is the implementation of a custum component library where the components look like hand drawn doodles.
+This project is the implementation of a custom component library where the components look like hand-drawn doodles.
 This project was created using [Storybook](https://storybook.js.org/) and [Create React App](https://github.com/facebook/create-react-app).
 
 ![AutoForm](images/autoform.png)
@@ -18,7 +18,7 @@ First, install dependencies
 
 ### `npm start`
 
-Runs the storybook, and you will be able to see every component from src/components.<br />
+Runs the storybook, and you can see every component from src/components.<br />
 Open [http://localhost:9009](http://localhost:9009) to view it in the browser.
 
 The page will reload if you make edits.<br />

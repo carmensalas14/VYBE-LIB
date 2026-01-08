@@ -1,7 +1,6 @@
 import React from 'react';
 import Button from './Button';
 // for render tests
-import ReactDOM from 'react-dom';
 import { render, cleanup } from '@testing-library/react';
 // for snapshot testing
 import renderer from 'react-test-renderer';
@@ -10,8 +9,7 @@ afterEach(cleanup);
 
 // check if button rendrs without crashing
 it('renders without crashing', () => {
-  const div = document.createElement('div');
-  ReactDOM.render(<Button></Button>, div);
+  render(<Button></Button>);
 });
 
 // check if button renders correctly

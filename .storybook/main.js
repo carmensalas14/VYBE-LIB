@@ -6,5 +6,10 @@ module.exports = {
     '@storybook/addon-actions',
     '@storybook/addon-links',
   ],
+  framework: {
+    name: '@storybook/react-webpack5',
+    options: {},
+  },
+  staticDirs: ['../public'],
 };
 

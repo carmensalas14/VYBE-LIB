@@ -1,36 +1,40 @@
 import React from 'react';
-import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 import Checkbox from '../Checkbox.jsx';
 
-storiesOf('Checkbox', module)
-  .add('fontSize', () => (
-    <section>
-      <Checkbox onClick={action('clicked')} label="greeting">
-        Small Font
-      </Checkbox>
+export default {
+  title: 'Checkbox',
+  component: Checkbox,
+};
 
-      <Checkbox onClick={action('clicked')} label="greeting2" fontSize="md">
-        Medium Font
-      </Checkbox>
+export const FontSize = () => (
+  <section>
+    <Checkbox onClick={action('clicked')} label="greeting">
+      Small Font
+    </Checkbox>
 
-      <Checkbox onClick={action('clicked')} label="greeting3" fontSize="lg">
-        Large Font
-      </Checkbox>
-    </section>
-  ))
-  .add('fillColor', () => (
-    <section>
-      <Checkbox onClick={action('clicked')} label="greeting" color="#008100">
-        Dark Green
-      </Checkbox>
+    <Checkbox onClick={action('clicked')} label="greeting2" fontSize="md">
+      Medium Font
+    </Checkbox>
 
-      <Checkbox onClick={action('clicked')} label="greeting2" color="#bd082c">
-        Dark Red
-      </Checkbox>
+    <Checkbox onClick={action('clicked')} label="greeting3" fontSize="lg">
+      Large Font
+    </Checkbox>
+  </section>
+);
 
-      <Checkbox onClick={action('clicked')} label="greeting3" color="#00288f">
-        Dark Blue
-      </Checkbox>
-    </section>
-  ));
+export const FillColor = () => (
+  <section>
+    <Checkbox onClick={action('clicked')} label="greeting" color="#008100">
+      Dark Green
+    </Checkbox>
+
+    <Checkbox onClick={action('clicked')} label="greeting2" color="#bd082c">
+      Dark Red
+    </Checkbox>
+
+    <Checkbox onClick={action('clicked')} label="greeting3" color="#00288f">
+      Dark Blue
+    </Checkbox>
+  </section>
+);

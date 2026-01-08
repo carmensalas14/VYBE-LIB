@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import { render, cleanup } from '@testing-library/react';
 import AutoForm from '../AutoForm.jsx';
 
@@ -13,8 +12,7 @@ afterEach(cleanup);
 
 // check if renders without crashing
 it('AutoForm renders without crashing', () => {
-  const section = document.createElement('section');
-  ReactDOM.render(<AutoForm form={config}></AutoForm>, section);
+  render(<AutoForm form={config}></AutoForm>);
 });
 
 // check if renders correctly

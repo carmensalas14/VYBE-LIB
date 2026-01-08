@@ -1,5 +1,8 @@
 import React from 'react';
-import { storiesOf } from '@storybook/react';
 
-storiesOf('Test', module).add('Simple', () => <div>Test Story</div>);
+export default {
+  title: 'Test',
+};
+
+export const Simple = () => <div>Test Story</div>;
 

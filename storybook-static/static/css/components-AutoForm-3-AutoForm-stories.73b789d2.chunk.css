@@ -1,0 +1,24 @@
+@import url(https://fonts.googleapis.com/css2?family=Coming+Soon&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Coming+Soon&display=swap);
+/* common button styling  */
+
+button {
+  font-family: 'Coming Soon', cursive;
+}
+
+form {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+label {
+  font-family: 'Coming Soon', cursive;
+}
+
+@media (min-width: 340px) {
+}
+
+
+/*# sourceMappingURL=components-AutoForm-3-AutoForm-stories.73b789d2.chunk.css.map*/

@@ -10,7 +10,7 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-rough": "^2.3.0",
-    "react-scripts": "^3.4.3",
+    "react-scripts": "^5.0.1",
     "roughjs": "^4.3.1",
     "styled-components": "^5.1.1"
   },
@@ -37,7 +37,7 @@
     "@storybook/addon-links": "^5.3.19",
     "@storybook/addons": "^5.3.19",
     "@storybook/preset-create-react-app": "^3.1.4",
-    "@storybook/react": "^5.3.19",
+    "@storybook/react": "^10.1.11",
     "@testing-library/react": "^9.5.0",
     "jest-dom": "^4.0.0",
     "react-test-renderer": "^16.13.1"

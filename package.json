@@ -3,20 +3,23 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/user-event": "^7.2.1",
+    "@testing-library/jest-dom": "^6.1.5",
+    "@testing-library/user-event": "^14.5.1",
     "animejs": "^3.2.0",
-    "prop-types": "^15.7.2",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
+    "prop-types": "^15.8.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "react-rough": "^2.3.0",
-    "react-scripts": "^3.4.3",
+    "react-scripts": "^5.0.1",
     "roughjs": "^4.3.1",
-    "styled-components": "^5.1.1"
+    "styled-components": "^6.1.1"
   },
   "scripts": {
-    "start": "start-storybook -p 9009 -s public",
-    "build": "start-storybook -p 9009 -s public",
+    "start": "npx storybook dev -p 9009",
+    "build": "npx storybook build",
+    "build-storybook": "npx storybook build",
+    "preview-storybook": "npx http-server storybook-static -p 8080 -o",
+    "chromatic": "npx chromatic --project-token=YOUR_PROJECT_TOKEN",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -33,13 +36,16 @@
     ]
   },
   "devDependencies": {
-    "@storybook/addon-actions": "^5.3.19",
-    "@storybook/addon-links": "^5.3.19",
-    "@storybook/addons": "^5.3.19",
-    "@storybook/preset-create-react-app": "^3.1.4",
-    "@storybook/react": "^5.3.19",
-    "@testing-library/react": "^9.5.0",
-    "jest-dom": "^4.0.0",
-    "react-test-renderer": "^16.13.1"
+    "@storybook/addon-actions": "^8.6.15",
+    "@storybook/addon-essentials": "^8.6.15",
+    "@storybook/addon-links": "^8.6.15",
+    "@storybook/cli": "^8.6.15",
+    "@storybook/preset-create-react-app": "^8.6.15",
+    "@storybook/react": "^8.6.15",
+    "@storybook/react-webpack5": "^8.6.15",
+    "@testing-library/react": "^16.0.0",
+    "ajv": "^8.12.0",
+    "chromatic": "^13.3.5",
+    "react-test-renderer": "^18.2.0"
   }
 }

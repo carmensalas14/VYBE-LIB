@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import { render, cleanup } from '@testing-library/react';
 import FormField3 from '../FormField-3';
 // for snapshot testing
@@ -9,8 +8,7 @@ afterEach(cleanup);
 
 // check if renders without crashing
 it('FormField3 renders without crashing', () => {
-  const div = document.createElement('div');
-  ReactDOM.render(<FormField3></FormField3>, div);
+  render(<FormField3></FormField3>);
 });
 
 // check if renders correctly

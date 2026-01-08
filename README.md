@@ -1,44 +1,117 @@
 # VYBE Component Library
 
-This project is the implementation of a custom component library where the components look like hand-drawn doodles.
-This project was created using [Storybook](https://storybook.js.org/) and [Create React App](https://github.com/facebook/create-react-app).
+A custom React component library featuring hand-drawn, doodle-style UI components. Built with React 18 and Storybook 8.
 
+##### [Link to recent Storybook build on Chromatic](https://695f719bc3022c5796a2d716-luwzldsejg.chromatic.com/?path=/story/autoform--auto-form)
+
+---
 ![AutoForm](images/autoform.png)
 
-> AutoForm component created using Input and Button component
-> <br />
+> AutoForm component created using Input and Button components
 
-## Development
 
-In the project directory, you can run:
+## Project Overview
 
-### `npm i`
+VYBE Library is a react component library inspired by hand-drawn doodles to add a fun and
+personalized look to any React project. This component library is built with React, utilizing
+Storybook and Chromatic for build tracking, collaboration, and demoing. VYBE is designed to
+be easy to customize components for size and color to match and fit the look of any React
+project. The components in VYBE are dynamic, mobile-friendly, and built with accessibility best
+practices top of mind. This library is tested with Jest, React Testing Library, and React Test
+Renderer, for component rendering and snapshot testing.
 
-First, install dependencies
 
-### `npm start`
+**Key Features:**
+- Hand-drawn aesthetic using Rough.js for sketchy, doodle-like appearance
+- Full Storybook integration for component documentation and interactive playground
+- Comprehensive test suite with Jest, React Testing Library, and Chromatic for visual regression testing
+- Customizable components with color, size, and style props
+- Responsive design that works across all device sizes
 
-Runs the storybook, and you can see every component from src/components.<br />
-Open [http://localhost:9009](http://localhost:9009) to view it in the browser.
 
-The page will reload if you make edits.<br />
+## Tech Stack
 
-![AutoForm on storybook](images/autoform-storybook.png)
+### Core Technologies
+- **React 18.2.0** - Modern React framework with hooks and concurrent features
+- **React DOM 18.2.0** - React rendering library for the web
+- **Create React App 5.0.1** - Build tooling and development environment setup
 
-> AutoForm in Storybook environment
+### Styling & Graphics
+- **Styled Components 6.1.1** - CSS-in-JS styling solution for component-scoped styles
+- **Rough.js 4.3.1** - Hand-drawn graphics library that creates sketchy, imperfect shapes
+- **React Rough 2.3.0** - React bindings for Rough.js to integrate hand-drawn graphics
+- **Anime.js 3.2.0** - Animation library for smooth interactive effects and transitions
 
-### `npm test`
+### Development & Documentation
+- **Storybook 8.6.15** - Component development environment and documentation tool
 
-Launches the test runner in the interactive watch mode.<br />
+### Testing
+- **Jest** - JavaScript test runner (included via react-scripts)
+- **React Testing Library 16.0.0** - Simple and complete testing utilities for React components
+- **React Test Renderer 18.2.0** - Lightweight testing utilities for snapshot testing
+- **Chromatic 13.3.5** - Visual regression testing and component review platform
 
-- Press `a` to run all tests
-- Press `f` to run only failed tests
-- Press `u` to automatically updated failing snapshot tests
+### Build & Deployment
+- **Webpack 5** - Module bundler (configured via Storybook)
+- **Babel** - JavaScript compiler (configured via react-scripts)
 
-### `npm run build`
+## Components
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **Button**: Hand-drawn border styling with hover animations, customizable color and size
+- **FormField**: Three variants (Loop, Wave, Loose) for text, password, and date inputs
+- **Checkbox**: Customizable fill colors and font sizes with interactive states
+- **Radio**: Customizable appearance with hand-drawn circle border
+- **AutoForm**: Dynamic form generator that creates complete forms from JSON configuration
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+
+## Getting Started
+
+### Installation
+
+```bash
+git clone <repository-url>
+cd VYBE-LIB
+npm install
+```
+
+### Development
+
+```bash
+npm start          # Start Storybook on http://localhost:9009
+npm test           # Run tests in watch mode
+npm run build-storybook    # Build for production
+npm run preview-storybook # Preview static build on port 8080
+npm run chromatic  # Publish to Chromatic (requires token)
+```
+
+## Testing
+
+The project includes a comprehensive test suite with render tests, query tests, snapshot tests, and visual regression testing with Chromatic. Test coverage includes Button, AutoForm, and all FormField variants.
+
+## Building & Deployment
+
+Build creates a static `storybook-static` directory deployable to Netlify, Vercel, GitHub Pages, or any static hosting service.
+
+## Usage Example
+
+```jsx
+import Button from './components/Button/Button';
+
+<Button color="#6d6" size="md" onClick={handleClick}>
+  Click Me
+</Button>
+```
+
+## Project Structure
+
+```
+VYBE-LIB/
+├── src/components/     # Button, FormField, Checkbox, Radio, AutoForm
+├── .storybook/      # Storybook configuration
+├── images/          # Documentation images
+└── public/          # Static assets
+```
+
+## License
+
+This project is private and proprietary.
